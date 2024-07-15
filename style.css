@@ -1,184 +1,106 @@
-body {
-    font-family: "Poppins", sans-serif;
+@font-face {
+    font-family: myFont1;
+    src: url(fonts/pxiEyp8kv8JHgFVrJJfecg.ttf);
 }
 
-nav {
-    width: 100%;
-    height: 70px;
-    background-color: #D9D9D9;
-    display: flex;
-    justify-content: space-evenly;
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body {
+height: 100%;
+width: 100%;
+
 }
 
-nav .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #FF5BA9;
-}
-
-
-nav .list {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav .list ul {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav .list ul li a {
-    text-decoration: none;
-    color: #FF5BA9;
-    font-weight: 600;
-    background-color: white;
-    border-radius: 12px;
-    padding: 7px 19px;
-}
-
-nav .list ul li a:hover {
-    background-color: #FF5BA9;
+.nav{
+    background-color: #918f9400;
     color: white;
 }
-
-.sec p {
-    margin: 0 0;
-}
-
-.top-tagline {
-    background-color: #f7c0dab7;
-    backdrop-filter: blur(10px);
-}
-
-.top-tagline .p2 {
-    font-family: "Praise", cursive;
-    font-size: 80px;
-}
-
-.top-tagline .first .box1 {
-    width: 141px;
-    height: 751px;
-    background-color: #6b5a62;
-    border-radius: 30px;
-    rotate: -137.56deg;
-    position: absolute;
-    z-index: 9;
-    transform: translate(ffpx, 50px);
-
-}
-
-.top-tagline .first .box2 {
-    width: 30px;
-    height: 751px;
-    background-color: #FF5BA9;
-    border-radius: 30px;
-    rotate: -40.82deg;
-    position: absolute;
-    left: 0;
-    z-index: 9;
-}
-
-.top-tagline .first .hide-img {
-   display: none;
-    z-index: 10;
-    position: relative;
-}
-
-.top-tagline .first .show-img {
-    z-index: 10;
-    position: relative;
-}
-
-.top-tagline .sec {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-}
-
-.top-tagline .sec .sec-inside .p1 {
-    font-size: 40px;
-    font-weight: bold;
-
-}
-.top-tagline .sec .sec-inside .p1:hover{
-    color: #FF5BA9;
-    font-size: 50px;
-    transition: all ease-in-out 0.5s;
-}
-.top-tagline .sec .sec-inside .p2:hover{
-    color: #FF5BA9;
-}
-.top-tagline .sec .sec-inside .p3:hover{
-color: #FF5BA9;
-}
-
-.top-tagline .socialmedia {
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-}
-
-.about-me {
-    width: auto;
-    height: auto;
-    margin-top: 50px;
-}
-
-.about-me .about-first h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #FF5BA9;
-    margin-bottom: 52px;
-
-}
-
-.about-me .about-first h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.about-me .about-first p {
-
-    font-size: 14px;
-}
-
-.about-first img {
-    float: right;
-    width: 30%;
-}
-
-.top-tagline .sec .sec-inside .p1{
+.navbar-collapse ul li:hover{
+    border-bottom: solid 1px #ec5325;
    
-    white-space: nowrap;
-    overflow: hidden;
-    animation: hallu 3.5s steps(30, end),
-    blink-caret .75s step-end infinite;
+}
+table,th,td{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px 0px;
 }
 
-@keyframes hallu {
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
-    
+.about-me .left{
+
+background-color: white;
 }
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+
+.about-me .left img{
+bottom: 0;
 }
+.about-me .right p{
+color: white; 
+}
+.about-me .right {
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+padding: 0 20px;
+}
+.about-me .right td {
+color: white;
+}
+.about-me {
+font-family: myFont1;
+}
+
+/* 
+.banner-text-img img{
+filter: drop-shadow(6px 6px 50px rgb(255, 0, 0));
+} */
+
+
+
+
+
+.box1{
+    width: 30% ;
+    height: 50% ;
+    background-color: skyblue;
+}
+
+
+
+
+
+
+
+
+
+.round{
+    transition: all 1s ease-in-out 0s;
+    background-color: #EC5325;
+}
+
+.round:hover{
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+.round h2{
+    transition: all 1s ease-in-out 0s;
+    color: #ffffff;
+}
+
+.round:hover > h2{
+  
+    transform: scale(2) !important;
+    color: rgb(0, 0, 0);
+}
+
+
+
+

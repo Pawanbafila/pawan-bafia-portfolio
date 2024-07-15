@@ -93,6 +93,34 @@ filter: drop-shadow(6px 6px 50px rgb(255, 0, 0));
 }
 
 
+.figma{
+    width: 100%;
+    height: fit-content;
+
+}
+.figma .container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.figma .container .frist {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+}
+.figma .container .frist img {
+width: 50%;
+}
+
+
+
+
+
+
 
 
 /****Gallery****/
@@ -167,4 +195,62 @@ filter: drop-shadow(6px 6px 50px rgb(255, 0, 0));
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/******************************************************************
+* Here our btn  
+*******************************************************************/
+
+.btn2{
+    margin: 50px auto;
+    background-color: rgb(135, 40, 89) !important;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30PX;
+    transition: box-shadow ease 0.4s;
+    position: relative;
+    padding: 5px 20px 0 20px;
+
+}
+.btn2 img{
+    position: absolute;
+   display: none;
+    width: 50%;
+    
+}
+.figma .container .frist a{
+    text-decoration: none;
+}
+.btn2 p {
+    text-decoration: none;
+    transition: box-shadow ease 0.2s;
+    
+}
+.btn2:hover{
+    box-shadow: 0 0 5px rgb(255, 47, 206), 0 0 10px rgb(255, 47, 206),0 0 15px rgb(255, 47, 206),0 0 20px rgb(255, 47, 206);
+}
+.btn2:hover >p{
+    text-shadow: 0 0 5px rgb(255, 47, 206), 0 0 10px rgb(255, 47, 206),0 0 15px rgb(255, 47, 206),0 0 20px rgb(255, 47, 206);
+}
+.btn2:hover > img{
+  display: block;
+animation: star 2s forwards  ease;
+}
+
+@keyframes star {
+    from{
+        opacity: 0;
+        left: 0;
+        top: 0;
+    }
+    to{
+        opacity: 1;
+        left: -10%;
+        top: -50%;
+        
+    }
 }

@@ -1,7 +1,4 @@
-@font-face {
-    font-family: myFont1;
-    src: url(fonts/pxiEyp8kv8JHgFVrJJfecg.ttf);
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -15,6 +12,7 @@ html {
 html,body {
 height: 100%;
 width: 100%;
+font-family: "Poppins", sans-serif;
 
 }
 
@@ -23,7 +21,7 @@ width: 100%;
     color: white;
 }
 .navbar-collapse ul li:hover{
-    border-bottom: solid 1px #ec5325;
+    border-bottom: solid 1px #ff3a72;
    
 }
 table,th,td{
@@ -53,9 +51,7 @@ padding: 0 20px;
 .about-me .right td {
 color: white;
 }
-.about-me {
-font-family: myFont1;
-}
+
 
 /* 
 .banner-text-img img{
@@ -82,7 +78,7 @@ filter: drop-shadow(6px 6px 50px rgb(255, 0, 0));
 
 .round{
     transition: all 1s ease-in-out 0s;
-    background-color: #EC5325;
+    background-color: #ff3a72;
 }
 
 .round:hover{
